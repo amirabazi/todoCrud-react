@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Noto+Sans+Display&display=swap');
+*{
+  color:white;  
+  font-family: 'Noto Sans Display', sans-serif;}
+
+body{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top:7rem;    
+}
+
+.taskManager{
+  background-color: rgba(255, 255, 255, 0.055);
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 5px 5px #00000017;
+}
+
+.form{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.taskManager input{
+  width: 15rem;  
+  text-align: center;
+}
+
+.taskManager input::placeholder{  
+  text-align: center;  
+}
+
+.taskManager button{
+   width: 5rem;
+   cursor: pointer;   
+}
+
+.taskManager button:hover{
+  opacity: 0.8;
+}
+
+.taskManager input,button {
+  background-color: #0F2027;
+  border: none;
+  border-radius: .3rem;
+  margin-bottom: .5rem;
+  height: 2rem;
+}
+
+.taskButtons button{
+  width:3rem;
+}
+.taskButtons button:last-child{
+  margin-left: .5rem;
+}
+
+.taskList{
+  width: 600px;
+  height: 400px;
+  overflow-x:auto;
+  margin-top:3rem;
+  justify-content: unset;
+}
+
+.tasks{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 90%; 
+  border-bottom:  1px solid #00000017;   
+  border-radius: 1rem;
+}
+
+.taskName{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.taskName p{
+  margin-left: .5rem
+}
+
+.removeDiv{
+  position: absolute;
+  right: 0;
+  margin-right: 20rem;
+  display: inline;  
+}
+
+.removeDivHidden{
+  display: none;
+}
+
+.editBtn{
+  margin-left: .5rem;
+}
+
