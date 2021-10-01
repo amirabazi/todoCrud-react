@@ -1,4 +1,5 @@
 ToDo List app in react. 
+React, Express, MySql
 Clone repository -> cd server & clientSide -> npm install.
 To run app: npm run devStart & npm start
 
